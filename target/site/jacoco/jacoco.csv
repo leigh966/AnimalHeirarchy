@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+AnimalHierarchy,com.tsi.leigh.animals,Animal,0,3,0,0,0,1,0,1,0,1
+AnimalHierarchy,com.tsi.leigh.animals,Cat,7,12,0,0,3,5,2,2,2,2
+AnimalHierarchy,com.tsi.leigh.animals,Main,33,0,2,0,9,0,3,0,2,0
+AnimalHierarchy,com.tsi.leigh.animals,Mammal,7,6,0,0,3,2,2,1,2,1
