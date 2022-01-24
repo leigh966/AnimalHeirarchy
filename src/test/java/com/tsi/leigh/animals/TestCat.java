@@ -13,4 +13,11 @@ public class TestCat
         Assertions.assertEquals(4, c.getNumberOfLegs(), "Cat should be created with 4 legs");
 
     }
+
+    @Test
+    public void testWarmBlooded()
+    {
+        Cat c = new Cat();
+        Assertions.assertTrue(c.isWarmBlooded(), "Cat should be warm blooded");
+    }
 }
