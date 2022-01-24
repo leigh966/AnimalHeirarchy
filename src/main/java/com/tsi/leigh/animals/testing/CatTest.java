@@ -11,6 +11,6 @@ public class CatTest
     public void ConstructorTest()
     {
         Cat c = new Cat();
-        Assertions.assertEquals(4, c.getNumberOfLegs());
+        Assertions.assertEquals(5, c.getNumberOfLegs());
     }
 }
