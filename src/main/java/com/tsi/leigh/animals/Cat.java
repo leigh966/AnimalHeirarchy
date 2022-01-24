@@ -5,7 +5,7 @@ public class Cat extends Mammal implements LeggedAnimal
     int numberOfLegs;
     String name = "Cat";
 
-    Cat()
+    public Cat()
     {
         numberOfLegs = 4;
     }
