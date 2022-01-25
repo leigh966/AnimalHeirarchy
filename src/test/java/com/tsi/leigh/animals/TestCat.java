@@ -25,7 +25,7 @@ public class TestCat
     public void testWalk()
     {
         Cat c = new Cat();
-        c.Walk();
+        c.walk();
         Assertions.assertEquals(19,c.getEnergy(),"Walking should bring cat energy from 20 to 19");
     }
 

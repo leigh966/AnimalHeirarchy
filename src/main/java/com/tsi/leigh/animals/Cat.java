@@ -16,10 +16,10 @@ public class Cat extends Mammal implements LeggedAnimal
         return energy;
     }
 
-    public void Walk()
+    public String walk()
     {
         energy--;
-        System.out.println("Walks like a cat");
+        return "Walks like a cat";
     }
 
     @Override
@@ -31,6 +31,20 @@ public class Cat extends Mammal implements LeggedAnimal
     public String getName()
     {
         return name;
+    }
+
+    public String haveAccident(int numberOfLegsLost)
+    {
+        if(numberOfLegsLost <= numberOfLegs)
+        {
+            numberOfLegs -= numberOfLegsLost;
+            return "Cat has lost " + numberOfLegsLost + " legs, " + numberOfLegs + " legs left";
+
+        }
+        else
+        {
+            return "That's not possible";
+        }
     }
 
 }

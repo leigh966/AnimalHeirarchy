@@ -2,7 +2,7 @@ package com.tsi.leigh.animals;
 
 public interface LeggedAnimal
 {
-    void Walk();
+    String walk();
     int getNumberOfLegs();
 
 }

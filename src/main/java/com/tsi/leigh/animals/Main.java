@@ -8,7 +8,7 @@ public class Main
 
             Cat c = new Cat();
             System.out.println(c.reproduce());
-            c.Walk();
+            c.walk();
             System.out.println(c.getName() + " has " + c.getNumberOfLegs() + " legs");
             if(c.isWarmBlooded())
             {
