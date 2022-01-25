@@ -65,6 +65,7 @@ public class TestCat
     {
         accidentUnit(4);
         accidentUnit(0);
+        accidentUnit(5);
         accidentUnit(-2);
     }
 }
