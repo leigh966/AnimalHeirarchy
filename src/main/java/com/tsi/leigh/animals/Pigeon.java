@@ -1,12 +1,9 @@
 package com.tsi.leigh.animals;
 
-public class Pigeon extends Bird implements LeggedAnimal
+public class Pigeon extends Bird
 {
-
-    private int numberOfLegs;
     public Pigeon()
     {
-        numberOfLegs = 2;
         energy = 5;
     }
 
@@ -16,8 +13,5 @@ public class Pigeon extends Bird implements LeggedAnimal
         return "Struts like a pigeon";
     }
 
-    public int getNumberOfLegs()
-    {
-        return numberOfLegs;
-    }
+
 }
