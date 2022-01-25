@@ -6,7 +6,7 @@ public class Main
     public static void main(String[] args)
     {
         Cat c = new Cat();
-        c.reproduce();
+        System.out.println(c.reproduce());
         c.Walk();
         System.out.println(c.getName() + " has " + c.getNumberOfLegs() + " legs");
         if(c.isWarmBlooded())

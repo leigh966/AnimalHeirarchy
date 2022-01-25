@@ -2,9 +2,9 @@ package com.tsi.leigh.animals;
 
 public abstract class Mammal extends Animal
 {
-    public void reproduce()
+    public String reproduce()
     {
-        System.out.println("Births live young");
+        return "Births live young";
     }
 
     @Override

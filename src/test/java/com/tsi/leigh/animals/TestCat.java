@@ -35,4 +35,10 @@ public class TestCat
         Cat c = new Cat();
         Assertions.assertEquals("Cat", c.getName(), "Name should be Cat");
     }
+
+    public void testReproduce()
+    {
+        Cat c = new Cat();
+        Assertions.assertEquals("Births live young", c.reproduce(), "Cat should use the mammal method to birth live young");
+    }
 }
