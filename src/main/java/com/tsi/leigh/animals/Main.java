@@ -3,19 +3,27 @@ package com.tsi.leigh.animals;
 public class Main
 {
 
-    public static void main(String[] args)
+    public static int main(String[] args)
     {
-        Cat c = new Cat();
-        System.out.println(c.reproduce());
-        c.Walk();
-        System.out.println(c.getName() + " has " + c.getNumberOfLegs() + " legs");
-        if(c.isWarmBlooded())
+        try
         {
-            System.out.println(c.getName() + " is warm blooded");
-        }
-        else
+            Cat c = new Cat();
+            System.out.println(c.reproduce());
+            c.Walk();
+            System.out.println(c.getName() + " has " + c.getNumberOfLegs() + " legs");
+            if(c.isWarmBlooded())
+            {
+                System.out.println(c.getName() + " is warm blooded");
+            }
+            else
+            {
+                System.out.println(c.getName() + " is cold blooded");
+            }
+            return 0;
+        } catch(Exception e)
         {
-            System.out.println(c.getName() + " is cold blooded");
+            return -1;
         }
+
     }
 }
