@@ -61,6 +61,6 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.tsi.leigh.animals.TestDog" name="com.tsi.leigh.animals.TestDog.testWalk" time="0"/>
   <testcase classname="com.tsi.leigh.animals.TestDog" name="com.tsi.leigh.animals.TestDog.testDog" time="0"/>
+  <testcase classname="com.tsi.leigh.animals.TestDog" name="com.tsi.leigh.animals.TestDog.testWalk" time="0"/>
 </testsuite>
