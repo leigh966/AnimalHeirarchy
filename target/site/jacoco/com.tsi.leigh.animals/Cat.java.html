@@ -2,28 +2,35 @@
 
 public class Cat extends Mammal implements LeggedAnimal
 {
-    int numberOfLegs;
+    private int numberOfLegs;
 <span class="fc" id="L6">    String name = &quot;Cat&quot;;</span>
 
     public Cat()
 <span class="fc" id="L9">    {</span>
-<span class="fc" id="L10">        numberOfLegs = 4;</span>
-<span class="fc" id="L11">    }</span>
+<span class="fc" id="L10">        energy = 20;</span>
+<span class="fc" id="L11">        numberOfLegs = 4;</span>
+<span class="fc" id="L12">    }</span>
+
+    public int getEnergy()
+    {
+<span class="fc" id="L16">        return energy;</span>
+    }
 
     public void Walk()
     {
-<span class="nc" id="L15">        System.out.println(&quot;Walks like a cat&quot;);</span>
-<span class="nc" id="L16">    }</span>
+<span class="fc" id="L21">        energy--;</span>
+<span class="fc" id="L22">        System.out.println(&quot;Walks like a cat&quot;);</span>
+<span class="fc" id="L23">    }</span>
 
     @Override
     public int getNumberOfLegs()
     {
-<span class="fc" id="L21">        return numberOfLegs;</span>
+<span class="fc" id="L28">        return numberOfLegs;</span>
     }
 
     public String getName()
     {
-<span class="nc" id="L26">        return name;</span>
+<span class="fc" id="L33">        return name;</span>
     }
 
 }
