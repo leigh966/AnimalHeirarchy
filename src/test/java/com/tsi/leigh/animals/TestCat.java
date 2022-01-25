@@ -36,9 +36,35 @@ public class TestCat
         Assertions.assertEquals("Cat", c.getName(), "Name should be Cat");
     }
 
+    @Test
     public void testReproduce()
     {
         Cat c = new Cat();
         Assertions.assertEquals("Births live young", c.reproduce(), "Cat should use the mammal method to birth live young");
+    }
+
+    public void accidentUnit(int numberOfLegsLost)
+    {
+        Cat c = new Cat();
+        if(numberOfLegsLost <= 4 && numberOfLegsLost >= 0)
+        {
+            Assertions.assertEquals("Cat has lost "+numberOfLegsLost + " legs, " + (4 - numberOfLegsLost) + " legs left", c.haveAccident(numberOfLegsLost), "Message is wrong");
+            Assertions.assertEquals(4 - numberOfLegsLost, c.getNumberOfLegs(), "Number of legs is wrong");
+        }
+        else
+        {
+            Assertions.assertEquals("That's not possible", c.haveAccident(numberOfLegsLost), "Method should reject number of legs lost");
+            Assertions.assertEquals(4, c.getNumberOfLegs(), "Cat should not have lost any legs");
+        }
+
+        Assertions.assertTrue(c.getNumberOfLegs() >= 0 && c.getNumberOfLegs() <= 4, "Should have 0 <= numberOfLegs <= 4");
+    }
+
+    @Test
+    public void testHaveAccident()
+    {
+        accidentUnit(4);
+        accidentUnit(0);
+        accidentUnit(-2);
     }
 }

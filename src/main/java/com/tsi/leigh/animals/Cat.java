@@ -35,7 +35,7 @@ public class Cat extends Mammal implements LeggedAnimal
 
     public String haveAccident(int numberOfLegsLost)
     {
-        if(numberOfLegsLost <= numberOfLegs)
+        if(numberOfLegsLost <= numberOfLegs && numberOfLegsLost >= 0)
         {
             numberOfLegs -= numberOfLegsLost;
             return "Cat has lost " + numberOfLegsLost + " legs, " + numberOfLegs + " legs left";
